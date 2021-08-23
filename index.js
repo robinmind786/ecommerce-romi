@@ -1,1 +1,1 @@
-const x =0;
+import './src/featured/main.js';
