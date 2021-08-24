@@ -709,3 +709,22 @@ nav .topnav .nav-links .links li:hover .arrow {
 /*.hero .slider-container .mySlies {
     display: none;
 }*/
+
+
+/*Category*/
+.categoires .item {
+    text-align: center;
+}
+
+.categoires .item img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.categoires .item .item-info .item-info-title a {
+    transition: all .4s ease;
+}
+
+.categoires .item .item-info .item-info-title a:hover {
+    color: var(--danger-color);
+}

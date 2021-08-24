@@ -81,12 +81,28 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+  .grid-4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-5 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media only screen and (min-width: 600px) {
   .grid-2 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-5 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -95,6 +111,14 @@
     display: grid;
      grid-template-columns: repeat(1, 1fr);
   }
+  .grid-4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-5 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -102,12 +126,28 @@
     display: grid;
     grid-template-columns: repeat(2, 25% 75%);
   }
+  .grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .grid-5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   .grid-2 {
     display: grid;
     grid-template-columns: repeat(2, 25% 75%);
+  }
+  .grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .grid-5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
