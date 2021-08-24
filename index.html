@@ -228,8 +228,22 @@
         </div>
         <div class="slider-container">
 
-          <div class="mySlies">
+          <div class="mySlies fade">
             <img src="/img/slider-1.jpg" width="100%">
+            <div class="slider-info">
+              <div class="slider-date">
+                <h4>Sum-21</h4>
+              </div>
+              <div class="slider-heading">
+                <h2>SS-2021 Top Trending</h2>
+              </div>
+              <div class="slider-btn">
+                <a href="#">Shop Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="mySlies fade">
+            <img src="/img/slider-2.jpg" width="100%">
             <div class="slider-info">
               <div class="slider-date">
                 <h4>Sum-21</h4>
@@ -246,10 +260,9 @@
           <a class="prev change" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next change" onclick="plusSlides(1)">&#10095;</a>
 
-          <div style="text-align:center">
+          <div class="dot-content" style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span> 
             <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
           </div>
 
         </div>
@@ -265,6 +278,6 @@
   
 
 
-  <script type="module" src="index.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
