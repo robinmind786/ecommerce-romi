@@ -379,9 +379,10 @@ nav .topnav .nav-links .links li:hover .arrow {
     color: var(--danger-color);
 }
 
- .mobile-bottom-nav {
+ header .mobile-bottom-nav {
     display: none;
  }
+
 
 
 @media only screen and (max-width: 900px) {
@@ -502,7 +503,7 @@ nav .topnav .nav-links .links li:hover .arrow {
         display: block;
     }
 
-    .mobile-bottom-nav {
+    header .mobile-bottom-nav {
         display: block;
         width: 100%;
         position: fixed;
@@ -552,4 +553,133 @@ nav .topnav .nav-links .links li:hover .arrow {
         display: none;
     }
 
+}
+
+
+
+
+
+/*===========
+    Hero
+===========*/
+.hero .category {
+    width: 100%;
+    background: var(--normal-color);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+
+}
+
+.hero .category .category-content .category-link {
+    display: flex;
+    flex-direction: column;
+    line-height: 38px;
+}
+
+.hero .category .category-content .category-link li {
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.hero .category .category-content .category-link li:last-child {
+    border-bottom: none;
+}
+
+.hero .category .category-content .category-link li:first-child {
+    padding: 10px 30px;
+    background: var(--dark-color);
+    color: var(--normal-color);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.hero .category .category-content .category-link li a {
+    padding: 0 30px;
+    font-size: 1rem;
+    color: var(--dark-color);
+    transition: all .3s ease;
+}
+
+.hero .category .category-content .category-link li a:hover {
+    color: var(--danger-color);
+}
+
+
+.hero .category .category-content .category-link li a span {
+    margin-left: 2rem;
+}
+
+.hero .category .category-content .category-link li a i {
+    font-size: 20px;
+}
+
+
+.hero .slider-container {
+    position: relative;
+}
+
+.hero .slider-container .slider-info {
+    width: 40%;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+.hero .slider-container .slider-info .slider-date {
+    background: var(--danger-color);
+    width: 100px;
+    text-align: center;
+    color: var(--normal-color);
+    font-size: 14px;
+}
+
+.hero .slider-container .slider-info .slider-heading {
+    font-size: 40px;
+    color: var(--dark-color);
+    margin-top: 20px;
+    line-height: 80px;
+}
+.hero .slider-container .slider-info .slider-btn {
+    margin-top: 2rem;
+}
+.hero .slider-container .slider-info .slider-btn a {
+    font-family: "Poppins",Sans-serif;
+    font-size: 16px;
+    border-width: 1px;
+    border-radius: 0;
+    color: var(--dark-color);
+    border: 1px solid var(--dark-color);
+    padding: 20px 30px;
+    transition: all .4s ease;
+}
+
+.hero .slider-container .slider-info .slider-btn a:hover {
+    background: var(--danger-color);
+    color: var(--normal-color);
+}
+
+.hero .slider-container .next,
+.hero .slider-container .prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    color: var(--normal-color);
+    padding: 16px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all .8s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    margin-top: -30px;
+    display: none;
+}
+
+.hero .slider-container:hover .change{
+    display: block;
+}
+
+.hero .slider-container .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
