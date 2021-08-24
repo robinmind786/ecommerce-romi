@@ -11,7 +11,7 @@
 
 .product .product-item {
 	border: 1px solid var(--border-color);
-	box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, 0.1);
+	/*box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, 0.1);*/
 }
 
 .product .product-item .cart-item-overlay {
@@ -181,5 +181,94 @@
 		padding: 0 5px;
 	}
 
+	.banner {
+		display: none;
+	}
 
+}
+
+
+
+.more-product {
+	margin-top: 4rem;
+	text-align: center;
+}
+
+.btns {
+	font-family: "Poppins",Sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    fill: #FFF;
+    color: #FFF;
+    background-color: var(--dark-color);
+    border-radius: 0 0 0 0;
+    padding: 18px 44px 18px 44px;
+    transition: all .5s ease;
+}
+
+.btns:hover {
+	background-color: var(--danger-color);
+}
+
+
+
+/*Banner*/
+.banner .banner-item {
+	position: relative;
+}
+
+.banner .banner-item .banner-info {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+.banner .banner-item .banner-info .banner-promo {
+	color: red;
+	font-size: 1rem;
+	position: relative;
+}
+
+.banner .banner-item .banner-info .banner-promo span {
+    padding: 7px 18px;
+    background: #fb5d5c;
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.banner .banner-item .banner-info .banner-promo span:before {
+	content: ' ';
+    border-top: 8px solid #fb5d5c;
+    border-left: 6px solid transparent;
+    border-right: 6px solid #fb5d5c;
+    border-bottom: 7px solid transparent;
+    position: absolute;
+    top: 0;
+    right: 100%;
+}
+
+.banner .banner-item .banner-info .banner-promo span:after {
+    content: ' ';
+    border-top: 8px solid transparent;
+    border-left: 6px solid transparent;
+    border-right: 6px solid #fb5d5c;
+    border-bottom: 7px solid #fb5d5c;
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+} 
+
+.banner .banner-item .banner-info .banner-offer {
+	font-size: 2rem;
+	color: var(--danger-color);
+	margin-top: 20px;
+}
+
+.banner .banner-item .banner-info .banner-btn {
+	margin-top: 4rem;
 }
